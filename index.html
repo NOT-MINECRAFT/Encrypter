@@ -20,7 +20,7 @@
                 }
             }
 
-            alert("The encrypted message is: " + result);
+            document.getElementById("output").innerHTML = "The encrypted message is: " + result;
         }
 
         function decrypt() {
@@ -38,7 +38,7 @@
                 }
             }
 
-            alert("The decrypted message is: " + result);
+            document.getElementById("output").innerHTML = "The decrypted message is: " + result;
         }
     </script>
 </head>
@@ -48,6 +48,8 @@
 
 <button onclick="encrypt()">Encrypt a Message</button>
 <button onclick="decrypt()">Decrypt a Message</button>
+
+<div id="output"></div>
 
 </body>
 </html>
