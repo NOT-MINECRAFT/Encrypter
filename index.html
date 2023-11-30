@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEXT ENCRYPTER</title>
+    <title> Encrypter Program</title>
     <style>
         body {
             background-color: #3498db; /* Change to your preferred background color */
@@ -37,9 +37,12 @@
         #output {
             margin-top: 20px;
             font-size: 18px;
+            color: white; /* Set text color to white */
         }
     </style>
     <script>
+        
+
         function encrypt() {
             var inputText = prompt("Enter a text:");
             var result = "";
@@ -76,16 +79,19 @@
             document.getElementById("output").innerHTML = "The decrypted message is: " + result;
         }
 
- </script>
+ // Your JavaScript code remains unchanged
+        // ...
+
+    </script>
 </head>
 <body>
 
-<h1>TEXT ENCRYPTER</h1>
+<h1>Encrypter Program</h1>
 
 <button onclick="encrypt()">Encrypt a Message</button>
 <button onclick="decrypt()">Decrypt a Message</button>
 
-<div id="output"></div>
+<div id="output">The encrypted message is:</div>
 
 </body>
 </html>
