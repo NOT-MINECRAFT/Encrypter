@@ -1,13 +1,13 @@
-RY<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEXT ENCRYPTER</title>
+    <title>Colorful Encrypter Array Program</title>
     <style>
         body {
             background-color: #3498db; /* Change to your preferred background color */
-            color: white; /* Text color */
+            color: transparent; /* Set text color to transparent */
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 0;
@@ -18,7 +18,9 @@ RY<!DOCTYPE html>
         h1 {
             padding: 20px;
             font-size: 2em;
-            color: #f39c12; /* Header color */
+            background-image: linear-gradient(to right, #f39c12, #e74c3c); /* Gradient text color */
+            -webkit-background-clip: text; /* Use background as the text fill */
+            color: transparent; /* Set text color to transparent */
         }
 
         button {
@@ -74,11 +76,11 @@ RY<!DOCTYPE html>
             document.getElementById("output").innerHTML = "The decrypted message is: " + result;
         }
 
-    </script>
+ </script>
 </head>
 <body>
 
-<h1>TEXT ENCRYPTER</h1>
+<h1>Colorful Encrypter Array Program</h1>
 
 <button onclick="encrypt()">Encrypt a Message</button>
 <button onclick="decrypt()">Decrypt a Message</button>
