@@ -3,7 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encrypter Array Program</title>
+    <title>Colorful Encrypter Array Program</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #3498db, #2c3e50); /* Gradient background */
+            color: white; /* Text color */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            padding: 20px;
+            font-size: 2em;
+            color: #00a8ff; /* Header color */
+        }
+
+        button {
+            background-color: #009900; /* Button color */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
     <script>
         function encrypt() {
             var inputText = prompt("Enter a text:");
@@ -40,11 +73,12 @@
 
             document.getElementById("output").innerHTML = "The decrypted message is: " + result;
         }
+
     </script>
 </head>
 <body>
 
-<h1>Encrypter Array Program</h1>
+<h1>Colorful Encrypter Array Program</h1>
 
 <button onclick="encrypt()">Encrypt a Message</button>
 <button onclick="decrypt()">Decrypt a Message</button>
